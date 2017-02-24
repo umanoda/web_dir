@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(version: 20170224152052) do
 
   create_table "directories", force: :cascade do |t|
     t.string   "name"
+    t.boolean  "is_root"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

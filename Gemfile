@@ -21,6 +21,7 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry-byebug'
+  gem 'rails-erd'
   gem 'rubocop'
 end
 
