@@ -14,11 +14,10 @@ ActiveRecord::Schema.define(version: 20170224152052) do
 
   create_table "directories", force: :cascade do |t|
     t.string   "name"
-    t.string   "location"
-    t.boolean  "is_root"
+    t.integer  "parent_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["location"], name: "index_directories_on_location"
+    t.index ["parent_id"], name: "index_directories_on_parent_id"
   end
 
   create_table "items", force: :cascade do |t|
