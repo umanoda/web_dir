@@ -7,6 +7,7 @@ end
 
 
 gem 'rails', '~> 5.0.1'
+gem "font-awesome-rails"
 gem 'sqlite3'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
