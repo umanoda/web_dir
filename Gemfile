@@ -23,6 +23,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry-byebug'
   gem 'rails-erd'
+  gem 'js_rails_routes'
   gem 'rubocop'
 end
 
