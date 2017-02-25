@@ -1,7 +1,7 @@
 // Ref. http://techlife.cookpad.com/entry/2016/07/27/101015
 module.exports = {
   entry: {
-    app: './src/index.js',
+    app: './src/index.jsx',
   },
 
   output: {
@@ -15,7 +15,7 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
-          presets: ['es2016', 'react'],
+          presets: ['es2015', 'es2016', 'react'],
         },
       },
     ],
