@@ -1,3 +1,27 @@
-// Place all the styles related to the directories controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.dir{
+  padding-left: 10px;
+
+  &.open .dir_name{
+    &:before{
+      font-family: 'FontAwesome';
+      content: '\f07b'; // fa-folder
+      margin-right: 3px;
+    }
+  }
+  &.close .dir_name{
+    &:before{
+      font-family: 'FontAwesome';
+      content: '\f114'; // fa-folder-o
+      margin-right: 3px;
+    }
+  }
+}
+
+.files{
+  padding-left: 10px;
+  li:before{
+    font-family: 'FontAwesome';
+    content: '\f016'; // fa-file-o
+    margin-right: 3px;
+  }
+}
