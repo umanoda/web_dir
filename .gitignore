@@ -18,10 +18,11 @@
 !/tmp/.keep
 
 /vendor
-/frontend/npm-debug.log
+npm-debug.log
 /frontend/node_modules/*
 !/frontend/node_modules/.keep
-/app/assets/javascripts/webpack
+/app/assets/javascripts/webpack/*
+/app/assets/javascripts/webpack/.keep
 
 # Ignore Byebug command history file.
 .byebug_history
