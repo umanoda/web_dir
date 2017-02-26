@@ -1,7 +1,7 @@
 // Ref. http://techlife.cookpad.com/entry/2016/07/27/101015
 module.exports = {
   entry: {
-    app: './src/index.jsx',
+    directory: './src/directory_main.jsx',
   },
 
   output: {
