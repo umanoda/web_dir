@@ -1,1 +1,4 @@
-%h1 hoge
+%section.main
+  - dir = @directories[nil]&.first
+  - if dir
+    = render partial: 'rec_render_dir', locals: {dir: dir, recursible: true}

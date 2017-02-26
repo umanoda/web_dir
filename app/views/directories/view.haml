@@ -1,0 +1,10 @@
+- content_for(:javascript) do
+  = javascript_include_tag 'webpack/app'
+
+%asside.menu
+  - dir = @directories[nil]&.first
+  - if dir
+    = render partial: 'rec_render_dir', locals: {dir: dir}
+
+%asside#dir-nav
+

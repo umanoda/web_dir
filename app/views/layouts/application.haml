@@ -9,3 +9,6 @@
 
   %body
     = yield
+
+    -if content_for?(:javascript)
+      = yield(:javascript)

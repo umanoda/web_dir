@@ -1,0 +1,24 @@
+.dir.open{class: dir.parent.nil? && 'root'}
+  .dir_name= dir.name
+  %span.nav-toggle
+    %span= link_to 'Add Directory', directories_path({parent_id: dir.id}), method: :post
+    %span= link_to 'Add Item', items_path(directory_id: dir.id), method: :post, remote: true
+    %span= link_to 'Delete Directory', directory_path(dir), method: :delete, remote: true
+
+  - dirs = @directories[dir.id]
+  - if defined?(recursible) && recursible.present? && dirs.present?
+    - dirs.each do |child|
+      = render partial: 'rec_render_dir', locals: {dir: child, recursible: true}
+  - elsif dirs.present?
+    - dirs.each do |child|
+      .dir.close
+        .dir_name= child.name
+        %nav
+        %span.nav-toggle
+          %span= link_to 'Add Directory', directories_path({parent_id: child.id}), method: :post
+          %span= link_to 'Add Item', items_path(directory_id: child.id), method: :post, remote: true
+          %span= link_to 'Delete Directory', directory_path(child), method: :delete, remote: true
+
+  %ul.files
+    - dir.items.each do |item|
+      %li= item.subject
