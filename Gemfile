@@ -22,6 +22,7 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry-byebug'
+  gem 'pry-rails'
   gem 'rails-erd'
   gem 'js_rails_routes'
   gem 'rubocop'

@@ -92,6 +92,8 @@ GEM
     pry-byebug (3.4.2)
       byebug (~> 9.0)
       pry (~> 0.10)
+    pry-rails (0.3.5)
+      pry (>= 0.9.10)
     puma (3.7.1)
     rack (2.0.1)
     rack-test (0.6.3)
@@ -185,6 +187,7 @@ DEPENDENCIES
   js_rails_routes
   listen (~> 3.0.5)
   pry-byebug
+  pry-rails
   puma (~> 3.0)
   rails (~> 5.0.1)
   rails-erd
