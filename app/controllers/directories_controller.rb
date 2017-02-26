@@ -21,6 +21,7 @@ class DirectoriesController < ApplicationController
                    Directory.find(dir_id)
                  end
     render json: {
+      id: @directory.id,
       directories: @directory.children,
       items: @directory.items,
     }
